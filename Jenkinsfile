@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('Clone Repo') {
       steps {
-        git 'https://github.com/B2ME-1st/maven-jenkins.git'
+        git branch: 'main', url: 'https://github.com/B2ME-1st/maven-jenkins.git'
       }
     }
 
