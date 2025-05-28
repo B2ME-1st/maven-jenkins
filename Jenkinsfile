@@ -35,7 +35,7 @@ pipeline {
         echo 'Running the container...'
         sh 'docker stop $IMAGE_NAME || true'
         sh 'docker rm $IMAGE_NAME || true'
-        sh 'docker run -d -p 8080:8080 --name $IMAGE_NAME $IMAGE_NAME'
+        sh 'docker run -d -p 6060:6060 --name $IMAGE_NAME $IMAGE_NAME'
       }
     }
   }
